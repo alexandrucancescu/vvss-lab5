@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register --timeout 20000 'test/**/*.test.ts'"
+    "test": "mocha --timeout 50000 'dist/**/*.test.js'"
   },
   "keywords": [],
   "author": "Alexandru Cancescu",
   "license": "MIT",
-
+  "license": "ISC",
   "dependencies": {
     "puppeteer": "^5.5.0"
   },

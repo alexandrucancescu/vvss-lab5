@@ -1,0 +1,10 @@
+{
+  "correct": {
+    "username": "cair1828",
+    "password": "commonsuite7"
+  },
+  "wrong": {
+    "username": "wrong_username",
+    "password": "wrong_password"
+  }
+}

@@ -12,6 +12,7 @@ let page;
 let browser;
 const webMailUrl = "https://www.scs.ubbcluj.ro/webmail/?_task=mail";
 const testData = File_1.getTestData();
+console.log("Is CI?", is_ci_1.default ? "Yes" : "No");
 mocha_1.before(async () => {
     browser = await puppeteer_1.default.launch({
         headless: is_ci_1.default,

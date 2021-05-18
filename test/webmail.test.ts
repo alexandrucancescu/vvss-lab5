@@ -2,7 +2,7 @@ import puppeteer, {ElementHandle} from "puppeteer";
 import isCi from "is-ci"
 import {getTestData, LoginData} from "./util/File";
 import {expect} from "chai";
-import {beforeEach, before, after, describe, it} from "mocha"
+import {before, after, describe, it} from "mocha"
 import {Browser, Page} from "puppeteer";
 
 let page: Page;
@@ -10,6 +10,8 @@ let browser: Browser;
 
 const webMailUrl = "https://www.scs.ubbcluj.ro/webmail/?_task=mail";
 const testData = getTestData();
+
+console.log("Is CI?", isCi ? "Yes" : "No")
 
 before(async () => {
 	browser = await puppeteer.launch({
